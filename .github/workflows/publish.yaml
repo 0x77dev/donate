@@ -41,3 +41,18 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Copy build artifacts
+        run: |
+          docker run -d --name donate ghcr.io/${{ github.repository }}
+          mkdir build
+          cd build
+          docker cp donate:/xmrig/build xmrig
+          docker cp donate:/cuda/build cuda
+          docker rm -f donate
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: build
