@@ -1,0 +1,42 @@
+{
+    "algo": "cryptonight",
+    "api": {
+        "access-token": null,
+        "ipv6": false,
+        "port": 0,
+        "restricted": true,
+        "worker-id": null
+    },
+    "av": 0,
+    "background": false,
+    "colors": true,
+    "cpu-affinity": null,
+    "cpu-priority": null,
+    "cuda": {
+        "enabled": true,
+        "loader": "/cuda/build/libxmrig-cuda.so"
+    },
+    "donate-level": 0,
+    "huge-pages": true,
+    "hw-aes": null,
+    "log-file": null,
+    "max-cpu-usage": 75,
+    "pools": [
+        {
+            "keepalive": true,
+            "nicehash": false,
+            "pass": "donate:0x77dev@protonmail.com",
+            "tls": false,
+            "tls-fingerprint": null,
+            "url": "pool.hashvault.pro:3333",
+            "user": "443wWkskNXVKaLdrG2owee8JxRAVvZ7wBhPhxr4a3ps4KxbA72NGPYh5A6fEavWujN8wJPw5ZnijaWHN3NQ2DNBmEX9hGTv",
+            "variant": -1
+        }
+    ],
+    "print-time": 3,
+    "retries": 5,
+    "retry-pause": 5,
+    "safe": false,
+    "syslog": false,
+    "threads": null
+}
