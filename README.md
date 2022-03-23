@@ -13,4 +13,5 @@ Compute power: `docker run -it ghcr.io/0x77dev/donate:latest`
 
 [Online card payment](https://send.monobank.ua/AGeoTNXdKu): `https://send.monobank.ua/AGeoTNXdKu`
 
-[Online card payment (via DonationAlerts)](https://www.donationalerts.com/r/0x77dev): `https://www.donationalerts.com/r/0x77dev`
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/0x77dev)
+
