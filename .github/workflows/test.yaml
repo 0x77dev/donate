@@ -1,0 +1,17 @@
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '* 15 * * *'
+
+jobs:
+  run:
+    name: run
+    runs-on: ubuntu-latest
+    steps:
+      - name: run
+        timeout-minutes: 15
+        run: |
+          docker run --name donate -d ghcr.io/0x77dev/donate:latest
+          docker logs --follow donate &
+          sleep 840
+          docker rm -f donate
